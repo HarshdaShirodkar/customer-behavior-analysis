@@ -1,70 +1,159 @@
-# Data Project Documentation Template
+# 🛍️ Customer Shopping Behaviour Analysis
 
-A production-ready GitHub template for documenting data analysis, SQL, dashboard, pipeline, and machine learning projects - with built-in examples, narrative guidance, and adaptable structure.
+An end-to-end Data Analytics project that explores customer shopping behaviour using **Python, MySQL, and Power BI**. This project demonstrates the complete analytics workflow, including data cleaning, SQL-based analysis, and the development of an interactive dashboard to generate actionable business insights.
 
-## What This Is
+---
 
-This is a **cloneable template repository** designed to help data analysts, scientists, and engineers document their projects the way senior practitioners do - with clarity, structure, and storytelling.
+## 📌 Project Overview
 
-Every section includes:
-- Plain-language instructions on what to write
-- Examples of strong vs. weak documentation  
-- Guidance on when to keep or delete a section
+Understanding customer purchasing behaviour is essential for improving business performance and customer satisfaction. This project analyses customer shopping data to uncover trends in purchasing habits, customer demographics, product performance, and subscription behaviour.
 
-It works for **any kind of data project:**
-- SQL analysis
-- Python / R exploratory analysis
-- Dashboards (Tableau, Power BI, Looker)
-- Data pipelines / ETL workflows
-- Machine learning / predictive modeling
-- Mixed-method projects
+The analysis was carried out using Python for data preparation, MySQL for querying and exploration, and Power BI for interactive visualisation.
 
-## Why This Exists
+---
 
-After hundreds of portfolio reviews, the pattern was clear: **the projects that stand out aren't always the most technically sophisticated - they're the ones where the README tells a clear story.**
+## 🛠️ Tools & Technologies
 
-Most data professionals never learn how to document their work. This template fixes that.
+- **Python** (Pandas, NumPy)
+- **Google Colab**
+- **MySQL Workbench**
+- **SQL**
+- **Power BI Desktop**
 
-## How to Use It
+---
 
-1. Click **"Use this template"** (green button at the top)
-2. Name your new repo after your actual project
-3. Copy the contents of `README_TEMPLATE.md` into your new project's README
-4. Delete folders and sections you don't need
-5. Remove all placeholder text and comments before publishing
+## 📂 Repository Structure
 
-Full walkthrough: [HOW_TO_USE.md](HOW_TO_USE.md)
+```text
+customer-behavior-analysis/
+│
+├── data/
+│   └── raw/
+│       ├── customer_shopping_behavior.csv
+│       └── README.md
+│
+├── notebooks/
+│   └── customer_behavior_data.ipynb
+│
+├── queries/
+│   └── final/
+│       └── customer_shopping_behavior.sql
+│
+├── reports/
+│   ├── CustomerBehaviorDashboard.pbix
+│   ├── Customer-Shopping-Behavior-Analysis-ppt.pptx
+│   └── Dashboard.png
+│
+└── README.md
+```
 
-## What's Inside
+---
 
-The template includes:
-- **README_TEMPLATE.md** - The fill-in-the-blank documentation template
-- **project_metadata.yml** - Optional machine-readable metadata
-- **Complete folder structure** - Pre-built folders for data, notebooks, scripts, queries, reports, visuals, and docs
-- **.gitignore** - Pre-configured to exclude data files
+# 📊 Dashboard Preview
 
-## Who This Is For
+![Customer Behavior Dashboard](reports/Dashboard.png)
 
-- **Beginners** building their first portfolio project
-- **Early-career analysts** cleaning up existing projects
-- **Career switchers** who have technical skills but need to frame their work
-- **Experienced practitioners** who want a consistent structure
+---
 
-## Features
+# 🎯 Business Questions
 
-✅ Section-by-section guidance with examples  
-✅ Supports SQL, Python, R, dashboards, pipelines, ML  
-✅ Includes ERD section for SQL projects  
-✅ Pre-built .gitignore for data projects  
-✅ Optional YAML metadata for portfolio automation  
-✅ Delete-what-you-don't-use philosophy  
+This project aims to answer the following business questions:
 
-## License
+- Which product categories generate the highest revenue?
+- Which customer segment contributes the most to sales?
+- How does subscription status vary among customers?
+- Which age groups spend the most?
+- What is the average purchase amount?
+- What is the average customer review rating?
+- Which product categories have the highest number of purchases?
 
-MIT License - use this however you want.
+---
 
-## Credits
+# 📈 Key Insights
 
-Created by **Issy BI**
+- The dataset contains **3,000 customers**, providing a comprehensive view of customer shopping behavior.
+- The **average purchase amount is $59.71**, indicating the typical spending per transaction.
+- Customers gave an **average review rating of 3.75/5**, reflecting generally positive satisfaction levels.
+- Approximately **73% of customers are non-subscribers**, while **27% are subscribed**, highlighting an opportunity to improve subscription adoption.
+- **Clothing** is the highest-performing category in terms of both **revenue** and **sales volume**.
+- **Accessories** is the second-largest contributor to overall revenue and customer purchases.
+- **Young Adults** generate the highest revenue and sales, making them the most valuable customer segment.
+- **Outerwear** contributes the lowest revenue and sales, indicating potential opportunities for targeted promotions or product improvements.
 
-If this helped you, consider starring the repo or sharing it with someone building their data portfolio.
+---
+
+# 💡 Business Recommendations
+
+Based on the analysis:
+
+- Increase marketing efforts toward **Young Adult customers**, as they generate the highest revenue.
+- Continue investing in the **Clothing** category, which consistently outperforms other categories.
+- Launch subscription incentives or loyalty programs to convert non-subscribers into subscribers.
+- Introduce targeted promotions for lower-performing categories such as **Outerwear**.
+- Improve customer experience and product quality to increase the average review rating beyond **4.0**.
+
+---
+
+# ⚙️ Project Workflow
+
+1. Imported the customer shopping dataset.
+2. Cleaned and preprocessed the data using Python in Google Colab.
+3. Imported the cleaned dataset into MySQL Workbench.
+4. Performed SQL queries to answer business questions and identify trends.
+5. Built an interactive dashboard in Power BI.
+6. Presented findings through a project presentation and dashboard.
+
+---
+
+# 📁 Project Files
+
+| File | Description |
+|------|-------------|
+| `customer_behavior_data.ipynb` | Data cleaning and preprocessing using Python |
+| `customer_shopping_behavior.sql` | SQL queries used for analysis |
+| `CustomerBehaviorDashboard.pbix` | Interactive Power BI dashboard |
+| `Customer-Shopping-Behavior-Analysis-ppt.pptx` | Project presentation |
+| `Dashboard.png` | Dashboard preview |
+| `customer_shopping_behavior.csv` | Original dataset |
+
+---
+
+# 🚀 Skills Demonstrated
+
+- Data Cleaning & Preprocessing
+- Exploratory Data Analysis (EDA)
+- SQL Query Writing
+- Database Management (MySQL)
+- Data Visualisation
+- Dashboard Development
+- Business Intelligence
+- Data Storytelling
+
+---
+
+# 📚 Dataset
+
+The project uses a customer shopping behaviour dataset containing information on:
+
+- Customer demographics
+- Product categories
+- Purchase amount
+- Review ratings
+- Subscription status
+- Shipping preferences
+- Purchase frequency
+- Seasonal purchases
+
+---
+
+# 🙌 Acknowledgements
+
+This project was completed as part of my learning journey in Data Analytics to strengthen my skills in Python, SQL, MySQL, and Power BI by building a complete end-to-end analytics solution.
+
+---
+
+## 👩‍💻 Author
+
+**Harshda Shirodkar**
+
+If you found this project interesting, feel free to ⭐ the repository.
